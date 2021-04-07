@@ -1,0 +1,22 @@
+apiVersion: skaffold/v2beta13
+kind: Config
+
+# Build
+build:
+  artifacts:
+  - image: api
+    context: ./api
+  - image: www
+    context: ./www
+# Deploy
+deploy:
+  kubectl:
+    manifests:
+      - ./api/k8s/*.yaml
+  helm:
+    releases:
+      - name: jenkins
+        remoteChart: jenkins
+        repo: https://charts.jenkins.io
+        namespace: cicd
+        createNamespace: true

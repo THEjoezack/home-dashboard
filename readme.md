@@ -3,10 +3,11 @@
 Home Dashboard is a personal dashboard website that lets me quickly see stuff I care about easily.
 
 ## TODO
- 
-* Set up some sort of build system
+
+* Set up a build for flask
 * Figure out where to host
 * Continuous Delivery pipeline
+* Move Flask to production webserver
 
 ## Why?
 
@@ -17,6 +18,13 @@ Gain more experience:
 * Kubernetes?
 * DevOps-y things
  
+## Requirements for running (Big mistake!)
+
+* Docker
+* Kubernetes
+* Helm
+* Skaffold
+
 ## Ideas
 
 ### 2021 Technical Goals
@@ -55,3 +63,14 @@ Gain more experience:
 
 - Company Stock
 - Major Index Funds
+
+
+
+
+4/5/2021:
+- Created basic Flask and Angular projects
+
+4/7/2021:
+- Created skaffold.yaml
+- Dockerized our Flask app! Hooray! 
+- Created Jenkins in the cluster
