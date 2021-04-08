@@ -4,9 +4,10 @@ Home Dashboard is a personal dashboard website that lets me quickly see stuff I 
 
 ## TODO
 
-* Set up a build for flask
-* Figure out where to host
-* Continuous Delivery pipeline
+* Set up Continuous Integration for www and api
+* Set up Continuous Delivery for www and api
+* Set up linters? Popeye?
+* Update containers to not run as root
 * Move Flask to production webserver
 
 ## Why?
